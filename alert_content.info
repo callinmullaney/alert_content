@@ -1,6 +1,7 @@
 name = Alert Content
+description = Creates an Alert content type.
 core = 7.x
-package = Features
+package = Content
 version = 7.x-1.0
 project = alert_content
 dependencies[] = ctools
