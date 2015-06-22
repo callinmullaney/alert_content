@@ -183,12 +183,88 @@ function alert_content_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-alert-field_meta_description'
+  $field_instances['node-alert-field_meta_description'] = array(
+    'bundle' => 'alert',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_description',
+    'label' => 'Meta Description',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'metatags_quick',
+      'settings' => array(),
+      'type' => 'metatags_quick_textarea',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-alert-field_meta_keywords'
+  $field_instances['node-alert-field_meta_keywords'] = array(
+    'bundle' => 'alert',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_keywords',
+    'label' => 'Meta Keywords',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'metatags_quick',
+      'settings' => array(),
+      'type' => 'metatags_quick_textfield',
+      'weight' => 8,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Alert Level');
   t('Alert Link');
   t('Body');
   t('File');
+  t('Meta Description');
+  t('Meta Keywords');
 
   return $field_instances;
 }
